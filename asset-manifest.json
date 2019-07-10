@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/WeatherApp/static/css/main.6c15f03d.chunk.css",
+    "main.js": "/WeatherApp/static/js/main.2e51d264.chunk.js",
+    "main.js.map": "/WeatherApp/static/js/main.2e51d264.chunk.js.map",
+    "runtime~main.js": "/WeatherApp/static/js/runtime~main.3044ef82.js",
+    "runtime~main.js.map": "/WeatherApp/static/js/runtime~main.3044ef82.js.map",
+    "static/js/2.a68ccf2f.chunk.js": "/WeatherApp/static/js/2.a68ccf2f.chunk.js",
+    "static/js/2.a68ccf2f.chunk.js.map": "/WeatherApp/static/js/2.a68ccf2f.chunk.js.map",
+    "index.html": "/WeatherApp/index.html",
+    "precache-manifest.47ad4fa9205026e5c28ad2f79ef1ded7.js": "/WeatherApp/precache-manifest.47ad4fa9205026e5c28ad2f79ef1ded7.js",
+    "service-worker.js": "/WeatherApp/service-worker.js",
+    "static/css/main.6c15f03d.chunk.css.map": "/WeatherApp/static/css/main.6c15f03d.chunk.css.map",
+    "static/media/App.css": "/WeatherApp/static/media/walking-large.ddc22aa9.jpg",
+    "static/media/rain2.png": "/WeatherApp/static/media/rain2.b2ebe4ce.png"
+  }
+}
