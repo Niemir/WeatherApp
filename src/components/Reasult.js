@@ -24,7 +24,9 @@ const Reasult = props => {
   return (
     <>
       {err ? null : (
+
         <div className='reasult'>
+
           {/* <h3>{city} </h3> */}
           <p className='temp-p'>{
             Math.floor(temp)}&ordm;</p>

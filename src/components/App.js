@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../styles/App.css';
 import Form from './Form.js'
 import Reasult from './Reasult.js'
+import { async } from "q";
 
 const time = new Date();
 const hours = time.getHours();
@@ -27,7 +28,8 @@ class App extends Component {
   handleFindCity = (e) => {
     e.preventDefault();
 
-    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.input}&APPID=efe58d1c57284f800ce9c6fcec9ddfe0&units=metric`
+    const API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.input}&APPID=efe58d1c57284f800ce9c6fcec9ddfe0&units=metric`
+
 
     fetch(API)
       .then(response => {
@@ -59,6 +61,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className={this.state.active ? 'logo active' : 'logo'}>
+          <h1>WeatherApp</h1>
+        </div>
         <div className="background"></div>
         <Form
           input={this.state.input}

@@ -4,6 +4,21 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.logo {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #0B800F;
+  text-shadow: 4px 4px white;
+  transition: 0.5s;
+}
+
+.logo.active {
+  opacity: 0;
+}
+
 form {
   display: flex;
   width: 80vw;
@@ -14,7 +29,7 @@ form {
 }
 
 form.active {
-  height: auto;
+  height: 15vh;
   transition: 1s
 }
 
@@ -23,8 +38,9 @@ form button {
 
   border-radius: 10px;
   border: 2px solid green;
-  background: transparent;
-  color: green;
+  background: rgba(75, 204, 86, 0.6);
+  color: white;
+  letter-spacing: 1px;
 }
 
 form input {
@@ -36,6 +52,11 @@ form input {
   font-size: 18px;
   text-transform: capitalize;
   flex-grow: 5;
+}
+
+form input::placeholder {
+  color: white;
+  letter-spacing: 1px;
 }
 
 form button {
@@ -74,22 +95,19 @@ form button {
 }
 
 .actual-weather {
-  position: fixed;
+  /* position: fixed;
   bottom: 3%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50%; */
+  /* transform: translateX(-50%); */
   background-image: url(../img/cloudy.png);
   background-size: cover;
-  width: 90vw;
-  height: 50vh;
+  width: 328px;
+  height: 328px;
   margin: 0 auto;
   border: 2px solid green;
   border-radius: 50%;
 }
 
-.sunny-weather {
-  background-image: url(../img/sunny.png);
-}
 
 
 .background {
@@ -99,7 +117,7 @@ form button {
   background-color: #2c3e50;
   background-image: url(../img/walking-large.jpg);
   background-size: cover;
-  background-position-x: center;
+  background-position: center;
 
   width: 100vw;
 
