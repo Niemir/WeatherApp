@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
 }
 
 .App {
@@ -151,6 +152,12 @@ form button {
   justify-content: space-around;
 }
 
+.icon img {
+  width: 90%;
+}
+
+
+
 @media (max-width:321px) {
 
   form input,
@@ -171,6 +178,13 @@ form button {
   .temp-p {
     font-size: 50px;
     margin: 0;
+  }
+}
+
+@media (min-width:321px) {
+  .actual-weather {
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -225,5 +239,109 @@ form button {
     width: 320px;
     height: 320px;
     /* box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75); */
+  }
+}
+
+@media (min-width:767px) and (orientation:portrait) {
+
+  .hour,
+  .temp {
+    font-size: 25px;
+  }
+
+  .future-weather {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  form {
+    width: 60vw;
+  }
+
+  form input,
+  form button {
+    font-size: 25px;
+  }
+
+  .icon img {
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) and (orientation:portrait) {
+  .actual-weather {
+    width: 460px;
+    height: 460px;
+  }
+
+  .future-weather {
+    width: 80vw;
+  }
+
+  .hour,
+  .temp {
+    font-size: 30px;
+  }
+
+  .icon img {
+    transform: scale(1.4)
+  }
+
+  .temp-p {
+    font-size: 100px;
+  }
+
+  .discription-p {
+    font-size: 30px;
+  }
+
+  form input {
+    padding: 30px 40px;
+    font-size: 30px;
+  }
+
+  form button {
+    padding: 28px 40px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  .future-weather {
+    width: 80vw;
+  }
+
+  form {
+    width: 60vw;
+  }
+
+  .App {
+    width: 910px;
+    height: 650px;
+    margin: 0 auto;
+    border: 5px solid green;
+    box-sizing: border-box;
+  }
+
+  .reasult {
+    width: 100%;
+  }
+
+  .background {
+    width: 900px;
+  }
+}
+
+@media (min-width:1024px) {
+  .future-weather {
+    width: 60vw;
+  }
+
+  form {
+    width: 40vw;
   }
 }

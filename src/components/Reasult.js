@@ -14,14 +14,19 @@ const Reasult = props => {
     description,
     firstHour,
     firstTemp,
+    firstIcon,
     secondHour,
     secondTemp,
+    secondIcon,
     thirdHour,
     thirdTemp,
+    thirdIcon,
     fourthHour,
     fourthTemp,
+    fourthIcon,
     fifthHour,
     fifthTemp,
+    fifthIcon,
 
   } = props.state
   const sunnyStyle = {
@@ -62,6 +67,9 @@ const Reasult = props => {
               <div className="temp">
                 {firstTemp}<span>&ordm;</span>
               </div>
+              <div className="icon">
+                <img src={`http://openweathermap.org/img/wn/${firstIcon}@2x.png`} alt="" />
+              </div>
             </div>
             <div className="second-weather">
               <div className="hour">
@@ -69,6 +77,9 @@ const Reasult = props => {
               </div>
               <div className="temp">
                 {secondTemp}<span>&ordm;</span>
+              </div>
+              <div className="icon">
+                <img src={`http://openweathermap.org/img/wn/${secondIcon}@2x.png`} alt="" />
               </div>
             </div>
             <div className="third-weather">
@@ -78,6 +89,9 @@ const Reasult = props => {
               <div className="temp">
                 {thirdTemp}<span>&ordm;</span>
               </div>
+              <div className="icon">
+                <img src={`http://openweathermap.org/img/wn/${thirdIcon}@2x.png`} alt="" />
+              </div>
             </div>
             <div className="fourth-weather">
               <div className="hour">
@@ -86,6 +100,9 @@ const Reasult = props => {
               <div className="temp">
                 {fourthTemp}<span>&ordm;</span>
               </div>
+              <div className="icon">
+                <img src={`http://openweathermap.org/img/wn/${fourthIcon}@2x.png`} alt="" />
+              </div>
             </div>
             <div className="fifth-weather">
               <div className="hour">
@@ -93,6 +110,9 @@ const Reasult = props => {
               </div>
               <div className="temp">
                 {fifthTemp}<span>&ordm;</span>
+              </div>
+              <div className="icon">
+                <img src={`http://openweathermap.org/img/wn/${fifthIcon}@2x.png`} alt="" />
               </div>
             </div>
 

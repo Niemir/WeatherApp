@@ -21,14 +21,19 @@ class App extends Component {
     active: false,
     firstHour: '',
     firstTemp: '',
+    firstIcon: '',
     secondHour: '',
     secondTemp: '',
+    secondIcon: '',
     thirdHour: '',
     thirdTemp: '',
+    thridIcon: '',
     fourthHour: '',
     fourthTemp: '',
+    fourthIcon: '',
     fifthHour: '',
     fifthTemp: '',
+    fifthIcon: '',
   }
 
   handleInputChange = e => {
@@ -68,7 +73,10 @@ class App extends Component {
       })
       .catch(err => {
         alert(`Nie znaleziono miasta ${this.state.input}`)
-        this.setState({ err: true });
+        this.setState({
+          input: '',
+          err: true
+        });
       })
 
     fetch(API3h)
@@ -84,14 +92,19 @@ class App extends Component {
         this.setState({
           firstHour: date.list[0].dt_txt.slice(10, 16),
           firstTemp: Math.floor(date.list[0].main.temp),
+          firstIcon: date.list[0].weather[0].icon,
           secondHour: date.list[1].dt_txt.slice(10, 16),
           secondTemp: Math.floor(date.list[1].main.temp),
+          secondIcon: date.list[1].weather[0].icon,
           thirdHour: date.list[2].dt_txt.slice(10, 16),
           thirdTemp: Math.floor(date.list[2].main.temp),
+          thirdIcon: date.list[2].weather[0].icon,
           fourthHour: date.list[3].dt_txt.slice(10, 16),
           fourthTemp: Math.floor(date.list[3].main.temp),
+          fourthIcon: date.list[3].weather[0].icon,
           fifthHour: date.list[4].dt_txt.slice(10, 16),
           fifthTemp: Math.floor(date.list[4].main.temp),
+          fifthIcon: date.list[4].weather[0].icon,
         });
       })
       .catch(err => {
