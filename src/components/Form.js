@@ -12,7 +12,7 @@ const Form = props => {
         onChange={props.change}
         placeholder='Wpisz miasto'
       />
-      <button ><i class="fas fa-search-location"></i></button>
+      <button ><i className="fas fa-search-location"></i></button>
 
     </form>
   );

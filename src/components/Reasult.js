@@ -4,7 +4,26 @@ import Rain from '../img/rain2.png'
 import Cloud from '../img/cloudy.png'
 
 const Reasult = props => {
-  const { err, temp, city, time, weather, icon } = props.state
+  const {
+    err,
+    temp,
+    city,
+    time,
+    weather,
+    icon,
+    description,
+    firstHour,
+    firstTemp,
+    secondHour,
+    secondTemp,
+    thirdHour,
+    thirdTemp,
+    fourthHour,
+    fourthTemp,
+    fifthHour,
+    fifthTemp,
+
+  } = props.state
   const sunnyStyle = {
     backgroundImage: `url(${Sunny})`,
   }
@@ -30,10 +49,52 @@ const Reasult = props => {
           {/* <h3>{city} </h3> */}
           <p className='temp-p'>{
             Math.floor(temp)}&ordm;</p>
-          <p className='discription-p'>{weather}</p>
-          <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
+          <p className='discription-p'>{description}</p>
+          {/* <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" /> */}
 
           <div className="actual-weather" style={whichWeather()} >
+          </div>
+          <div className="future-weather">
+            <div className="first-weather">
+              <div className="hour">
+                {firstHour}
+              </div>
+              <div className="temp">
+                {firstTemp}<span>&ordm;</span>
+              </div>
+            </div>
+            <div className="second-weather">
+              <div className="hour">
+                {secondHour}
+              </div>
+              <div className="temp">
+                {secondTemp}<span>&ordm;</span>
+              </div>
+            </div>
+            <div className="third-weather">
+              <div className="hour">
+                {thirdHour}
+              </div>
+              <div className="temp">
+                {thirdTemp}<span>&ordm;</span>
+              </div>
+            </div>
+            <div className="fourth-weather">
+              <div className="hour">
+                {fourthHour}
+              </div>
+              <div className="temp">
+                {fourthTemp}<span>&ordm;</span>
+              </div>
+            </div>
+            <div className="fifth-weather">
+              <div className="hour">
+                {fifthHour}
+              </div>
+              <div className="temp">
+                {fifthTemp}<span>&ordm;</span>
+              </div>
+            </div>
 
           </div>
 
